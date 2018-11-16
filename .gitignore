@@ -1,0 +1,37 @@
+*.pyc
+__pycache__
+.DS_Store
+.coverage
+user
+.project
+.pydevproject
+ve*
+*~
+.*~
+*.iml
+.idea
+out
+.ipynb_checkpoints
+
+# entire target except dist folder
+target/*
+!target/dist
+target/dist/*
+!target/dist/yapo-0.1.0.dev
+target/dist/yapo-0.1.0.dev/*
+!target/dist/yapo-0.1.0.dev/dist/
+target/dist/yapo-0.1.0.dev/dist/*.whl
+
+# generated pdoc documentation
+api-doc
+
+# Ignoring cram test error
+src/cmdlinetest/test_help.t.err
+
+# sphinx doc artefacts
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# package
+.env
